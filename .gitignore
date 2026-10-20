@@ -1,0 +1,26 @@
+# Секреты
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+key.properties
+
+# Node
+node_modules/
+dist/
+
+# Flutter / Dart
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+
+# IDE / ОС
+.idea/
+.DS_Store
+Thumbs.db
