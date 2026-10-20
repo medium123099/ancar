@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'core/theme/app_theme.dart';
 import 'features/auth/login_screen.dart';
 import 'features/home/home_screen.dart';
 
@@ -12,10 +13,9 @@ class AncarApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ancar',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF4F46E5)),
-      ),
+      theme: AppTheme.light(),
+      darkTheme: AppTheme.dark(),
+      themeMode: ThemeMode.system,
       home: const AuthGate(),
     );
   }
